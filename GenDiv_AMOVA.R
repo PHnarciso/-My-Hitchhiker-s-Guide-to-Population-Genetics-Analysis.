@@ -1,3 +1,5 @@
+#Script for calculating genetic diversity indices of natural populations and performing AMOVA analysis.
+
 library("dartR")
 library("adegenet")
 library("pegas")
