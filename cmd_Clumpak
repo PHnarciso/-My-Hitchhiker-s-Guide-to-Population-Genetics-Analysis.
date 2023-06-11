@@ -1,0 +1,16 @@
+====== CLUMPAK ======
+The main pipeline offers a full pipeline for the summation and graphical representation of the results previously obtained by the user using a STRUCTURE-like program.
+
+INPUT
+- files meanQ(output FastStructure)
+- .zip
+- File that relates the populations/ssp (the file should contain the names/IDs of the animals on separate lines, in the order of FastStructure input)
+
+to ZIP files(bash):
+    --> zip <file_name>.zip *meanQ
+
+UPLOAD in CLUMPAK and run:
+- clumpak http://clumpak.tau.ac.il/index.html
+- upload zip file
+- Input type: ADMIXTURE
+- upload pops file
