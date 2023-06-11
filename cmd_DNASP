@@ -1,0 +1,11 @@
+Outfile run with all populations
+
+--> file *.pw.txt
+--> search for Dxy and Da pairwise
+Dxy = average number of substitutions per site per pair of samples.
+Da = net number of substitutions per site per pair of samples. Da corrected for variation within the analyzed samples.
+
+- Run for each of the populations
+rad.out file
+Retrieve information from the first line
+Organize a list with the information for each population - NAME; SAMPLE SIZE divided by 2; HD; PI; TethaWattNuc; TajimaD.
