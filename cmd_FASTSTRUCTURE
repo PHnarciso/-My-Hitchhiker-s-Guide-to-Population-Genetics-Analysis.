@@ -16,10 +16,13 @@ COMMAND (lizards are awesome pipeline):
 --> laa all input.csv --maxk=n
 
 COMMAND (logistic):
---> python ./structure.py -K 4 --input=/secondary/lcp/Pedro/FastStructure/Fast_3/Fast_4/Pyrrhulina_FastStructure --output=/secondary/lcp/Pedro/FastStructure/Fast_logistic/k=4/logistic_k4 --tol=10e-8 --prior=logistic --full
+
+# K=4
+--> python ./structure.py -K 4 --input="*_FastStructure" --output="path of output file" --tol=10e-8 --prior=logistic --full
 
 COMMAND (logistic/nohup):
---> nohup python ./structure.py -K 3 --input=/secondary/lcp/Pedro/FastStructure/Fast_3/Fast_4/Pyrrhulina_FastStructure --output=/secondary/lcp/Pedro/FastStructure/Fast_logistic/k=3/logistic_k4 --tol=10e-8 --prior=logistic --full &
+# K=3 and nohup
+--> nohup python ./structure.py -K 3 --input="*_FastStructure" --output="path of output file" --tol=10e-8 --prior=logistic --full &
 
 *input = *_FastStructure.csv
 *I can use the PCA result as a guide to define the maximum k
