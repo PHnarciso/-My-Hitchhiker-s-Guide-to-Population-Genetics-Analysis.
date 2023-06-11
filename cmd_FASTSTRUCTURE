@@ -1,0 +1,27 @@
+===== FASTSTRUCTURE =====
+
+FastStructure is an algorithm for inferring population structure from large SNP genotype data. It is based on a variational Bayesian framework for posterior inference and is written in Python2.
+
+- PREPARATION OF INPUT
+Use input from PCA <*_inputPCA.csv>
+Open it in LibreOffice or similar
+Delete everything that is not marker and sample metadata (code and name of the animals)
+Save the file as *_FastStructure.csv
+Open the file with ATOM(or similae) and check the delimiter, it should be a comma TO RUN
+
+Access command line as an administrator:
+--> su root
+
+COMMAND (lizards are awesome pipeline):
+--> laa all input.csv --maxk=n
+
+COMMAND (logistic):
+--> python ./structure.py -K 4 --input=/secondary/lcp/Pedro/FastStructure/Fast_3/Fast_4/Pyrrhulina_FastStructure --output=/secondary/lcp/Pedro/FastStructure/Fast_logistic/k=4/logistic_k4 --tol=10e-8 --prior=logistic --full
+
+COMMAND (logistic/nohup):
+--> nohup python ./structure.py -K 3 --input=/secondary/lcp/Pedro/FastStructure/Fast_3/Fast_4/Pyrrhulina_FastStructure --output=/secondary/lcp/Pedro/FastStructure/Fast_logistic/k=3/logistic_k4 --tol=10e-8 --prior=logistic --full &
+
+*input = *_FastStructure.csv
+*I can use the PCA result as a guide to define the maximum k
+*To run on the cluster, use sftp to upload the input, ssh (root) to execute the command
+*Generated outputs can be used in CLUMPAK for visualization of population structure.
