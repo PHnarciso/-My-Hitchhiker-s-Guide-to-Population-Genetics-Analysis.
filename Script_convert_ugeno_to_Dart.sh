@@ -3,6 +3,9 @@
 #About ugeno
 # Files *.geno & *.u.geno - This is a SNP based format. Each line corresponds to one snp with one column per sample. The value in the sample column indicates the number of copies of the reference allele each individual has. 9 indicates missing data. This format is used by EIGENSTRAT, SMARTPCA, and ADMIXTURE, among other programs.
 
+#I think there might be a simpler (though possibly more laborious) way to perform these conversions using "sed" in sequence.
+
+
 
 #!/bin/bash
 
